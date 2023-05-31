@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(194, 65, 249);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+form {
+  border: solid 1px black;
+  width: 80%;
+  height: fit-content;
+  border: solid 2px grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(189, 188, 188);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.send {
+  width: 30%;
+  background-color: blueviolet;
+}
+
+.send:hover {
+  background-color: rgb(162, 99, 222);
+}
+
+@media (min-width: 700px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  form {
+    width: 40%;
+  }
+
+  input,
+  select {
+    width: 50%;
+  }
+}
